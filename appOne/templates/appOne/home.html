@@ -1,0 +1,20 @@
+{% extends 'appOne/base.html' %}
+{% load static %}
+{%block content%}
+<div class='container'>
+<h2 class="mt-5">Portfolio</h2>
+<div class="row">
+{%for x in content%}
+<div class="col-lg-3 col-md-6">
+<img src="{{ x.photo.url }}" class="img-fluid mb-2">
+<h1>{{ x.subject}}</h1>
+<p>{{ x.content}}</p>
+<h5>{{ x.github}}</h5>
+
+</div>
+
+{% endfor %}
+</div>
+</div>
+
+{% endblock %}
