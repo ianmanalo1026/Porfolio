@@ -15,5 +15,6 @@ class Content(models.Model):
 class about(models.Model):
     name = models.CharField(max_length=250)
     location = models.CharField(max_length=250)
+    training = models.TextField(max_length=1000)
     
     
