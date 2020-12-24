@@ -25,16 +25,16 @@
                 </div>
                 <div class="col-md-6 mr-md-5">
                     <h3 class="intro pt-5 mx-5 my-3"><span>Ian Manalo</span> is a Back-end web developer based in Manila City, Philippines</h3>
-                    <p class="text-wrap pt-5 mx-5 my-5" style="width: 50rem;"><span>Ian Manalo</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis totam repellendus hic? Doloremque in explicabo dolore voluptatum accusamus ratione nemo totam dolor facere deserunt repudiandae impedit aliquid necessitatibus atque nam vero vel blanditiis magni incidunt, facilis voluptates nisi est? Amet nisi earum perspiciatis dolorum corporis veniam modi molestias ipsum voluptas?</p>
+                    <p class="text-wrap pt-5 mx-5 my-5 text-wrap" style="width: 40rem;"><span>Ian Manalo</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis totam repellendus hic? Doloremque in explicabo dolore voluptatum accusamus ratione nemo totam dolor facere deserunt repudiandae impedit aliquid necessitatibus atque nam vero vel blanditiis magni incidunt, facilis voluptates nisi est? Amet nisi earum perspiciatis dolorum corporis veniam modi molestias ipsum voluptas?</p>
                     <div class="row pt-5">
                         <div class="col-md-4 pt-5">
-                            <a href=""><i class="fab fa-github-alt fa-5x text-info github-img"></i></a>
+                            <a href="https://github.com/ianmanalo1026" target="_blank"><i class="fab fa-github-alt fa-3x text-info github-img"></i></a>
                         </div>
                         <div class="col-md-4 pt-5">
-                            <a href=""><i class="fab fa-linkedin fa-5x link-img"></i></a>
+                            <a href="https://www.linkedin.com/in/rolly-christian-manalo-a479561b2/" target="_blank"><i class="fab fa-linkedin fa-3x link-img" ></i></a>
                         </div>
                         <div class="col-md-4 pt-5">
-                            <a href=""><i class="fab fa-stack-overflow fa-5x text-warning stack-img"></i></a>
+                            <a href="https://stackoverflow.com/users/9920035/ian" target="_blank"><i class="fab fa-stack-overflow fa-3x text-warning stack-img"></i></a>
                         </div>
                     </div>
                  </div>
@@ -43,17 +43,25 @@
         </div>
       </section>
 
-      <section>
+      <section class="body">
+        <div class="row text-dark text-center">
+          <div class="col m-4">
+              <h1 class="display-4 mb-4">Portfolio</h1>
+              <div class="container underline mb-4"></div>
+              <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium inventore, sint quisquam fugiat pariatur culpa officia. Eveniet omnis quia tempora.</p>
+          </div>
+          </div>
+
         {% block content %}
         {% endblock %}
       </section>
 
-      <section class="px-5   technologies">
+      <section class="px-5 technologies">
         <div class="container-fluid pt-3">
             <div class="row text-white text-center">
                 <div class="col m-4">
                   <h1 class="display-4 mb-4">Technologies & Experience</h1>
-                  <div class="underline mb-4"></div>
+                  <div class="container underline mb-4"></div>
                   <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium inventore, sint quisquam fugiat pariatur culpa officia. Eveniet omnis quia tempora.</p>
                 </div>
               </div>
@@ -86,41 +94,58 @@
                     </div>
                     <h6 class="mb-3">CSS3</h6>
                     <div class="progress mb-4" style="height: 20px">
-                        <div class="progress-bar progress-bar-striped font-weight-bold bg-info" style="width: 50%">
+                        <div class="progress-bar progress-bar-striped font-weight-bold bg-warning" style="width: 50%">
                         50%
                         </div>
                     </div>
-                    <h6 class="mb-3">JavaScript</h6>
+                    <h6 class="mb-3">JQuery</h6>
                     <div class="progress mb-4" style="height: 20px">
-                        <div class="progress-bar progress-bar-striped font-weight-bold bg-info" style="width: 30%">
+                        <div class="progress-bar progress-bar-striped font-weight-bold bg-secondary" style="width: 30%">
                         30%
                         </div>
                     </div>
                     </div>
-                    <div class="col-md-6 mr-md-5 mr-5  pt-5">
+                    <div class="col-md-6 mr-md-5 mr-2 pt-3">
                         <div class="row mt-5">
-                            <div class="col-md-6 mb-5 mt-5">
-                                <h1>hello</h1>
-                                <p class="m-0">• Lorem ipsum dolor sit amet.</p>
-                                <p class="m-0">• Lorem ipsum dolor sit amet.</p>
-                                <p class="m-0">• Lorem ipsum dolor sit amet.</p>
+                            <div class="col-md-6 mb-5">
+                                <div class="card">
+                                    <div class="card-header text-dark">
+                                      <h6><i class="far fa-lightbulb"></i> Back-end Development</h6>
+                                    </div>
+                                    <div class="card-body bg-dark">
+                                      <blockquote class="blockquote mb-0">
+                                        <p>C:\> Intermediate knowledge in creating a web application with Test-driven Development using <span>Django Framework/Python.</span></p>
+                                      </blockquote>
+                                    </div>
+                                  </div>                            
+                                </div>
+                            <div class="col-md-6 mb-5 ">
+                                <div class="card">
+                                    <div class="card-header text-dark">
+                                      <h6><i class="fas fa-pen-fancy"></i> Front-end Development</h6>
+                                    </div>
+                                    <div class="card-body bg-dark">
+                                      <blockquote class="blockquote mb-0">
+                                        <p>C:\> Created a couple of landing pages using HTML, CSS, Bootstrap, and small scripts for JQuery.</p>
+                                      </blockquote>
+                                    </div>
+                                  </div>
                             </div>
-                            <div class="col-md-6 mb-5 mt-5">
-                                <h1>hello</h1>
-                                <p>Lorem ipsum dolor sit amet.</p>
+                            <div class="container col-md-6 mt-5 align-content-center">
+                                <div class="card">
+                                    <div class="card-header text-dark">
+                                      <h6><i class="fas fa-box-open"></i> Source Code Management</h6>
+                                    </div>
+                                    <div class="card-body bg-dark">
+                                      <blockquote class="blockquote mb-0">
+                                        <p>C:\> Currently using Github for Version Control and Python Virtual Environment to isolate the current environment.</p>
+                                      </blockquote>
+                                    </div>
+                                  </div>
+                                </div>
                             </div>
-                            <div class="col-md-6 mt-5">
-                                <h1>hello</h1>
-                                <p>Lorem ipsum dolor sit amet.</p>
-                            </div>
-                            <div class="col-md-6 mt-5">
-                                <h1>hello</h1>
-                                <p>Lorem ipsum dolor sit amet.</p>
-                            </div>
-                            
                         </div>
                     </div>
-                </div>
                 </div>
             </div>
         </div>

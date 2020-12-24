@@ -1,16 +1,21 @@
 .main-header {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .8)), url("images/background.JPG") no-repeat center center /cover;
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .6)), url("images/background.JPG") no-repeat center center /cover;
     height: 100vh;
 }
 
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
 .github-img, .link-img, .stack-img {
-    animation: beating 5s infinite;
+    animation: beating 1s infinite;
 }
 
 .icon-main {
-    animation: beating 5s infinite;
+    animation: beating 3s infinite;
 }
 
 .navbar-info {
@@ -23,6 +28,7 @@
     }
     40% {
         transform: scale(1.1);
+
         
     }
     60% {
@@ -38,9 +44,30 @@
 
 
 .technologies {
-    background: rgb(87, 84, 84);
+    background:#151f20;
     height:100vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+
+img {
+    width:100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.image-resize{
+    height: 250px;
+    object-fit: cover;
+}
+h2.forloop{
+    padding-top: 10%;
+}
+p.forloop {
+    padding-top: 3%;
+}
+
+.body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
 }
