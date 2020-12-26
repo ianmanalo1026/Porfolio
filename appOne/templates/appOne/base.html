@@ -5,151 +5,117 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="{% static 'appOne/style.css' %}">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">  
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
+
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
   </head>
   <body>
-      <section class="main-header pt-5">
-        <div class="container-fluid pt-5">
-            <div class="row text-center text-light pt-5 ">
-                <div class="col-md-6 h2 font-weight-bold pt-5">
-                    <i class="fas fa-desktop fa-10x text-warning icon-main pt-5"></i>
-                </div>
-                <div class="col-md-6 mr-md-5">
-                    <h3 class="intro pt-5 mx-5 my-3"><span>Ian Manalo</span> is a Back-end web developer based in Manila City, Philippines</h3>
-                    <p class="text-wrap pt-5 mx-5 my-5 text-wrap" style="width: 40rem;"><span>Ian Manalo</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis totam repellendus hic? Doloremque in explicabo dolore voluptatum accusamus ratione nemo totam dolor facere deserunt repudiandae impedit aliquid necessitatibus atque nam vero vel blanditiis magni incidunt, facilis voluptates nisi est? Amet nisi earum perspiciatis dolorum corporis veniam modi molestias ipsum voluptas?</p>
-                    <div class="row pt-5">
-                        <div class="col-md-4 pt-5">
-                            <a href="https://github.com/ianmanalo1026" target="_blank"><i class="fab fa-github-alt fa-3x text-info github-img"></i></a>
-                        </div>
-                        <div class="col-md-4 pt-5">
-                            <a href="https://www.linkedin.com/in/rolly-christian-manalo-a479561b2/" target="_blank"><i class="fab fa-linkedin fa-3x link-img" ></i></a>
-                        </div>
-                        <div class="col-md-4 pt-5">
-                            <a href="https://stackoverflow.com/users/9920035/ian" target="_blank"><i class="fab fa-stack-overflow fa-3x text-warning stack-img"></i></a>
-                        </div>
-                    </div>
-                 </div>
-                </div>
-            </div>
+    <section class="header-info">
+      <nav class="navbar navbar-light transparent fixed-top">
+        <div class="container-fluid pb-5">
+          <a class="navbar-brand" href="#">
+            <img src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24">
+          </a>
+      </nav>
+        <div class="container text-light text-center banner w-50">
+          <h4 class="name-info">Ian <span class="name-info">Manalo</span> is a self-taught back-end web developer based in Manila City, Philippines</h4>
         </div>
-      </section>
+    </section>
 
-      <section class="body">
-        <div class="row text-dark text-center">
-          <div class="col m-4">
-              <h1 class="display-4 mb-4">Portfolio</h1>
-              <div class="container underline mb-4"></div>
-              <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium inventore, sint quisquam fugiat pariatur culpa officia. Eveniet omnis quia tempora.</p>
+    <section class="about-info">
+      <div class="container text-center pt-5">
+        <h3>About Ian</h3>
+        <hr class="container" style="width: 30rem">
+      </div>
+      <div class="container text-center w-50 mt-3 pt-2">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis odit aut eligendi reprehenderit recusandae optio rem! At inventore impedit ex nemo tempora officia est excepturi nam aliquid dolores beatae, deleniti porro animi adipisci corrupti voluptatem rem quos laudantium tempore hic vero minima quas aspernatur accusantium! Reprehenderit dolorem beatae libero consectetur. Sapiente minus eaque saepe dicta incidunt iusto similique delectus recusandae, modi nihil commodi sequi, quisquam expedita dignissimos illum porro fugiat repellendus vitae quam at a illo cum voluptatibus. Autem in, odit quia numquam ipsum, quasi nulla enim similique voluptate ipsa sint ducimus architecto labore ullam, perspiciatis voluptas cumque totam ea?</p>
+      </div>
+    </div>
+      <div class="container text-center py-5">
+        <div class="row align-items-center">
+          <div class="col-lg-5 text-center">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, necessitatibus? Ex dolorem voluptatum consequatur excepturi ipsam fuga unde sequi officia.</p>
           </div>
+          <div class="col-lg-7 text-dark text-lg-right text-center">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam corrupti nesciunt placeat quidem qui? Doloremque ex eligendi eum repudiandae architecto.</p>
           </div>
+        </div>
+    </section>
 
-        {% block content %}
-        {% endblock %}
-      </section>
+    <section class="project-info pb-3">
+      <div class=" container text-center text-light pt-5 pb-5">
+        <h3>Projects</h3>
+        <hr class="container" style="width: 30rem">
+      </div>
+      {% block content%}
+      {% endblock%}
+    </section>
 
-      <section class="px-5 technologies">
-        <div class="container-fluid pt-3">
-            <div class="row text-white text-center">
-                <div class="col m-4">
-                  <h1 class="display-4 mb-4">Technologies & Experience</h1>
-                  <div class="container underline mb-4"></div>
-                  <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium inventore, sint quisquam fugiat pariatur culpa officia. Eveniet omnis quia tempora.</p>
-                </div>
+    <section class="conding-info pb-5">
+      <div class=" container text-center text-dark pt-3 pb-5">
+        <h3>Coding Challenge</h3>
+        <hr class="container" style="width: 30rem">
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-header">
+                Featured
               </div>
-            <div class="row text-light pt-1">
-                <div class="col-md-6 h2 font-weight-bold pt-2">
-                    <h4 class="mb-5">Technologies</h4>
-                    <h6 class="mb-3">Django Framework</h6>
-                    <div class="progress mb-4" style="height: 20px">
-                        <div class="progress-bar progress-bar-striped font-weight-bold" style="width: 70%">
-                            70%
-                        </div>
-                    </div>
-                    <h6 class="mb-3">Python</h6>
-                    <div class="progress mb-4" style="height: 20px">
-                        <div class="progress-bar progress-bar-striped font-weight-bold bg-success" style="width: 60%">
-                            60%
-                        </div>
-                    </div>
-                    <h6 class="mb-3">Bootstrap4 Framework</h6>
-                    <div class="progress mb-4" style="height: 20px">
-                        <div class="progress-bar progress-bar-striped font-weight-bold bg-danger" style="width: 40%">
-                            40%
-                        </div>
-                    </div>
-                    <h6 class="mb-3">HTML5</h6>
-                    <div class="progress mb-4" style="height: 20px">
-                        <div class="progress-bar progress-bar-striped font-weight-bold bg-info" style="width: 50%">
-                            50%
-                        </div>
-                    </div>
-                    <h6 class="mb-3">CSS3</h6>
-                    <div class="progress mb-4" style="height: 20px">
-                        <div class="progress-bar progress-bar-striped font-weight-bold bg-warning" style="width: 50%">
-                        50%
-                        </div>
-                    </div>
-                    <h6 class="mb-3">JQuery</h6>
-                    <div class="progress mb-4" style="height: 20px">
-                        <div class="progress-bar progress-bar-striped font-weight-bold bg-secondary" style="width: 30%">
-                        30%
-                        </div>
-                    </div>
-                    </div>
-                    <div class="col-md-6 mr-md-5 mr-2 pt-3">
-                        <div class="row mt-5">
-                            <div class="col-md-6 mb-5">
-                                <div class="card">
-                                    <div class="card-header text-dark">
-                                      <h6><i class="far fa-lightbulb"></i> Back-end Development</h6>
-                                    </div>
-                                    <div class="card-body bg-dark">
-                                      <blockquote class="blockquote mb-0">
-                                        <p>C:\> Intermediate knowledge in creating a web application with Test-driven Development using <span>Django Framework/Python.</span></p>
-                                      </blockquote>
-                                    </div>
-                                  </div>                            
-                                </div>
-                            <div class="col-md-6 mb-5 ">
-                                <div class="card">
-                                    <div class="card-header text-dark">
-                                      <h6><i class="fas fa-pen-fancy"></i> Front-end Development</h6>
-                                    </div>
-                                    <div class="card-body bg-dark">
-                                      <blockquote class="blockquote mb-0">
-                                        <p>C:\> Created a couple of landing pages using HTML, CSS, Bootstrap, and small scripts for JQuery.</p>
-                                      </blockquote>
-                                    </div>
-                                  </div>
-                            </div>
-                            <div class="container col-md-6 mt-5 align-content-center">
-                                <div class="card">
-                                    <div class="card-header text-dark">
-                                      <h6><i class="fas fa-box-open"></i> Source Code Management</h6>
-                                    </div>
-                                    <div class="card-body bg-dark">
-                                      <blockquote class="blockquote mb-0">
-                                        <p>C:\> Currently using Github for Version Control and Python Virtual Environment to isolate the current environment.</p>
-                                      </blockquote>
-                                    </div>
-                                  </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
             </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-header">
+                Featured
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-header">
+                Featured
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
         </div>
-      </section>
+      </div>
+
+    </section>
+
+    <section class="contact-info">
+    </section>
+
+    <section class="footer-info">
+
+    </section>
+
 
     <!-- Optional JavaScript; choose one of the two! -->
 
@@ -157,9 +123,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
 
   </body>
 </html>
-
