@@ -128,9 +128,9 @@ MEDIA_URL = '/media/'
 
 
 EMAIL_USE_TLS = True
-EMAIL_HOST = "smtp-gmail.com"
-EMAIL_HOST_USER = "ian.manalo1026@gmail.com"
-EMAIL_HOST_PASSWORD = "Soulgun21"
+EMAIL_HOST = "smtp.gmail.com"
+EMAIL_HOST_USER = os.environ.get('Email_Username')
+EMAIL_HOST_PASSWORD = os.environ.get('Email_Password')
 EMAIL_PORT = 587
 
 

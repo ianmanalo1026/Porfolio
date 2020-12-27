@@ -7,7 +7,7 @@ body {
 .header-info {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .6)), url("images/background.JPG") no-repeat center center /cover;
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .6)), no-repeat center center /cover;
     height: 48vh;
 }
 
@@ -26,7 +26,7 @@ body {
 }
 
 .project-info {
-    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .6)), no-repeat center center /cover;
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .6)), url("images/background.JPG") no-repeat center center /cover;;
 }
 
 .project-img {
@@ -36,3 +36,4 @@ body {
     object-fit: cover;
 }
   
+linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .6)), no-repeat center center /cover
