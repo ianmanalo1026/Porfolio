@@ -7,7 +7,7 @@ body {
 .header-info {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .6)), no-repeat center center /cover;
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .6)), url("images/background.JPG") no-repeat center center /cover;
     height: 48vh;
 }
 
@@ -19,6 +19,7 @@ body {
     width: 80%;
   }
 
+
   .name-info:first-letter {
     font-family: 'Russo One', sans-serif;
     font-size: 2rem;
@@ -26,14 +27,77 @@ body {
 }
 
 .project-info {
-    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .6)), url("images/background.JPG") no-repeat center center /cover;;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .6)), url("images/background2.JPG") no-repeat center center /cover;
+    height: 100vh;
 }
 
 .project-img {
     float: center;
-    width:  300px;
-    height: 300px;
+    height: 100;
     object-fit: cover;
 }
+
+/* contact */
+.contact-info {
+    background: linear-gradient(105deg,
+     rgba(21, 31, 32, 1) 0%,
+     rgba(21, 31, 32, .95) 50%,
+     transparent 50%),
+     url(images/background.JPG) no-repeat center center /cover;
+  }
   
-linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .6)), no-repeat center center /cover
+  .input {
+    background: transparent;
+    border-color: transparent;
+    border-bottom: 2px solid #ccc;
+    border-radius: 0;
+    transition: all .8s;
+  }
+  
+  .input:focus {
+    background: transparent;
+    border-color: transparent;
+    box-shadow: none;
+    color: #fff;
+    border-bottom: 2px solid #f5593d;
+  }
+  
+  .submit-button {
+    background: #f5593d;
+    color: #eee;
+    transition: all .3s;
+  }
+  
+  .submit-button:hover {
+    background: #f9793d;
+    transform: translateY(-3px);
+  }
+  
+  .label {
+    color: #777;
+    display: block;
+    margin-top: -70px;
+    margin-left: 4px;
+    font-size: 13px;
+    transition: all .3s;
+  }
+  
+  .input:placeholder-shown + .label {
+    transform: translate(20px, 20px);
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  @media (max-width: 992px) {
+    .contact {
+      background: linear-gradient(rgba(21, 31, 32, 1), rgba(21, 31, 32, .95));
+    }
+  
+    .contact-form {
+      width: 80%;
+      margin: auto;
+    }
+  }
+  /* end of contact */

@@ -34,89 +34,89 @@
 
     <section class="about-info">
       <div class="container text-center pt-5">
-        <h3>About Ian</h3>
+        <h3 class="display-4 fw-bold">About</h3>
         <hr class="container" style="width: 30rem">
       </div>
-      <div class="container text-center w-50 mt-3 pt-2">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis odit aut eligendi reprehenderit recusandae optio rem! At inventore impedit ex nemo tempora officia est excepturi nam aliquid dolores beatae, deleniti porro animi adipisci corrupti voluptatem rem quos laudantium tempore hic vero minima quas aspernatur accusantium! Reprehenderit dolorem beatae libero consectetur. Sapiente minus eaque saepe dicta incidunt iusto similique delectus recusandae, modi nihil commodi sequi, quisquam expedita dignissimos illum porro fugiat repellendus vitae quam at a illo cum voluptatibus. Autem in, odit quia numquam ipsum, quasi nulla enim similique voluptate ipsa sint ducimus architecto labore ullam, perspiciatis voluptas cumque totam ea?</p>
+      <div class="container text-center mt-3 pt-2 mb-5 " style="width:45rem">
+            <p class="fw-bold">Ian is a self-taught backend developer based in Manila City, Philippines. He is a Filipino and a graduate of Bachelor of Science in Information Technology. As a self-taught web developer, he started learning Python and Django Web Framework on Online courses that really help him to strive in building and innovating modern web applications. As he progresses to his web developer career, he aims to learn new technologies and knowledge from different individuals. He can work individually, but he is also a team player and willing to recommend and share new ideas. Thinking out of the box is one of his formulas to succeed in solving algorithms and cases. For him, working together will have a big difference from other competitors. </p>
       </div>
+      <hr class="container" style="width: 30rem">
     </div>
-      <div class="container text-center py-5">
-        <div class="row align-items-center">
-          <div class="col-lg-5 text-center">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, necessitatibus? Ex dolorem voluptatum consequatur excepturi ipsam fuga unde sequi officia.</p>
+      <div class="container py-5">
+        <div class="row justify-content-center">
+          <div class="col-5 text-center">
+              <img src="{% static 'appOne/images/Workforce.JPG' %}" style="width:350px" class="img-thumbnail mt-2">
           </div>
-          <div class="col-lg-7 text-dark text-lg-right text-center">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam corrupti nesciunt placeat quidem qui? Doloremque ex eligendi eum repudiandae architecto.</p>
+          <div class="col-7 text-dark text-center" style="width:30rem">
+            <h6 class="pb-2 mt-3 mb-4 fw-bold">Corporate Experience</h6>
+            <p class="fw-bold">He was a Real-Time-Analyst and a Team Lead Intern in one of the biggest BPO companies in the Philippines. He handles big data and provides business analysis for their day-to-day score and recommendations for the next week's number. He has a good reputation in terms of communication and discussing data with the client that provides them readable and convenient reports. He loves creating a template for business purposes such as intraday reports using Microsoft Excel.</p>
           </div>
         </div>
+      </div>
     </section>
 
     <section class="project-info pb-3">
       <div class=" container text-center text-light pt-5 pb-5">
-        <h3>Projects</h3>
+        <h3 class="display-4 fw-bold">Projects</h3>
         <hr class="container" style="width: 30rem">
       </div>
       {% block content%}
       {% endblock%}
     </section>
 
-    <section class="conding-info pb-5">
-      <div class=" container text-center text-dark pt-3 pb-5">
-        <h3>Coding Challenge</h3>
-        <hr class="container" style="width: 30rem">
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <div class="card">
-              <div class="card-header">
-                Featured
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Special title treatment</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card">
-              <div class="card-header">
-                Featured
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Special title treatment</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card">
-              <div class="card-header">
-                Featured
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Special title treatment</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
+    <section class="contact-info">
+      <section class="contact p-5">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-5 pb-4">
+              <h3 class="display-4 mb-5 text-white">Get In Touch</h3>
+              <form class="contact-form">
+                <form action="">
+                <div class="form-group py-4">
+                  <input type="text" class="form-control my-2 p-2 input" placeholder="Name">
+                  <label for="name" class="label">Name</label>
+                </div>
+                <div class="form-group py-4">
+                  <input type="email" class="form-control my-2 p-2 input" placeholder="Email Address">
+                  <label for="email" class="label">Email Address</label>
+                </div>
+                <div class="mb-3 mt-5">
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
+                  <button type="button" class="btn btn-secondary btn-lg mt-5">Send</button>
+                </div>
+              </form>
             </div>
           </div>
         </div>
+      </section>
+    </section>
+
+    <footer class="bg-dark px-5">
+      <div class="container text-light text-center">
+      <div class="row">
+        <h5 class="pb-3">Powered by:</h5>
+        <div class="row mb-2 m-0">
+        <div class="col-lg-3 col-sm-6 text-center">
+          <img src="{% static 'appOne/images/django.png' %}" style="width:50px" class="img-thumbnail mx-auto d-block">
+        </div>
+        <div class="col-lg-3 col-sm-6 text-center">
+          <i class="fab fa-css3 fa-3x"></i>
+        </div>
+        <div class="col-lg-3 col-sm-6 text-center">
+          <i class="fab fa-html5 fa-3x"></i>
+        </div>
+        <div class="col-lg-3 col-sm-6 text-center">
+          <i class="fab fa-bootstrap fa-3x"></i>
+        </div>
       </div>
-
-    </section>
-
-    <section class="contact-info">
-    </section>
-
-    <section class="footer-info">
-
-    </section>
-
-
+      </div>
+    </div>
+        <div class="row mt-2">
+          <div class="col text-center text-light border-top pt-3">
+            <p>&copy; Ian Manalo, Back-end Developer</p>
+          </div>
+        </div>
+    </footer>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
@@ -129,3 +129,9 @@
 
   </body>
 </html>
+
+
+
+
+
+
