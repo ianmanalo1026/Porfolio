@@ -8,7 +8,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .6)), url("images/background.JPG") no-repeat center center /cover;
-    height: 48vh;
+    height: 45vh;
 }
 
 .banner {
@@ -26,17 +26,25 @@ body {
     margin-right: 4px;
 }
 
-.project-info {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .6)), url("images/background2.JPG") no-repeat center center /cover;
-    height: 100vh;
+.project-img {
+    float: left;
+    width:  400px;
+    height: 230px;
+    object-fit: cover;
 }
 
-.project-img {
-    float: center;
-    height: 100;
-    object-fit: cover;
+
+.card {
+        margin: 0 auto; /* Added */
+        float: none; /* Added */
+        margin-bottom: 10px; /* Added */
+        transition: .05s;
+}
+
+.card:hover{
+  box-shadow: 8px 8px 5px blue;    
+  transform: scale(1.1);
+
 }
 
 /* contact */

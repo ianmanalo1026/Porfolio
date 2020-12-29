@@ -6,7 +6,6 @@ from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 urlpatterns = [
     path('', views.home, name='home'),
-    path('sendemail/', views.send_email, name='send_email')
 ]
 
 if settings.DEBUG:

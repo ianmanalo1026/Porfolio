@@ -19,32 +19,12 @@
 </head>
 <body>
     <section class="forloop">
-    {%block content%}
-    <div class='container mb-5 text-dark'>
-      <div class="row row-cols-1 row-cols-md-3 g-4">
-        {%for x in content%}
-        <div class="col">
-          <div class="card h-100 w-100 justify-content-center shadow-lg float-center">
-            <img class="rounded mx-auto mt-2 d-block project-img" src="{{ x.photo.url }}" >
-            <div class="card-body">
-              <h4>{{ x.subject}}</h4>
-              <p class="w-100">{{ x.content}}</p>
-            </div>
-            <div class="card-footer text-center">
-              <div class="row  border-dark">
-                <div class="col border-dark ">
-                  <a href="#" class="text-dark"><i class="fab fa-chrome text-dark"></i> Website</a>
-                </div>
-                <div class="col  text-dark">
-                  <a href="#" class="text-dark"><i class="fab fa-github-alt text-dark mr-2"></i> Github</a>
-                </div>
-              </div>
-              
-            </div>
-          </div>
-        </div>
-        {% endfor %}
-      </div>
+    {%block email %}
+    <form method="post">
+        {% csrf_token %}
+        {{ form }}
+        <input type="submit" value="Submit">
+    </form>
     {% endblock %}
 </section>
     
