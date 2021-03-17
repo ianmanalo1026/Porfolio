@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'v1@y5%fh_q-ccy-w($v6)2z6**^j+1ai#2(mwor-maxfp@h4*^'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['stormy-island-95639.herokuapp.com', 'ianmanalo.info', 'www.ianmanalo.info']
+ALLOWED_HOSTS = []
 
 
 # Application definition
