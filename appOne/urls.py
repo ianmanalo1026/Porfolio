@@ -1,11 +1,13 @@
 from django.urls import path
-from . import views
+from .views import UserSignInView, CreateContentView, home 
 from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 urlpatterns = [
-    path('', views.home, name='home'),
+    path('', home, name='home'),
+    path('sign-in', UserSignInView.as_view(), name='sign-in'),
+    path('create-content', CreateContentView.as_view(), name='create-content'),
 ]
 
 if settings.DEBUG:

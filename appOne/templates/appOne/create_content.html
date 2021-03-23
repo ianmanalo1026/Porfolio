@@ -1,5 +1,5 @@
-<form method="POST">{% csrf_token %}
-    {{ form.text | safe }}
+<form>
     {{ form.media }}
-    <input type="submit" value="Save">
+    {{ form.as_p }}
+    <input type="submit"/>
 </form>
