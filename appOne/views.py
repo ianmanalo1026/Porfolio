@@ -1,10 +1,13 @@
 from django.shortcuts import render, redirect
 from django.core.mail import send_mail
-from .models import Content
-from django.contrib.auth.models import User
 from django.contrib import messages
+from django.views.generic import FormView, CreateView
+from django.contrib.auth.models import User
+from django.contrib.auth.forms import AuthenticationForm
+from django.contrib.auth import login, logout, authenticate
 
-
+from .models import Content
+from .forms import ContentForm
 
 
 def home(request):
@@ -21,4 +24,15 @@ def home(request):
     else:
         return render(request, 'appOne/home.html', {'content':content})
     
+
+class UserSignInView(FormView):
+    """Authentication for user"""
+    model = User
+    form_class = AuthenticationForm
+    template_name = 'appOne/signin.html'
+    success_url = '/'
     
+
+class CreateContentView(CreateView):
+    form_class = ContentForm
+    template_name = 'appOne/create_content.html'
