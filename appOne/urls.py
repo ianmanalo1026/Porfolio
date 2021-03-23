@@ -7,7 +7,7 @@ from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 urlpatterns = [
     path('', home, name='home'),
     path('sign-in', UserSignInView.as_view(), name='sign-in'),
-    path('create-content', CreateContentView.as_view(), name='create-content'),
+    # path('create-content', CreateContentView.as_view(), name='create-content'),
 ]
 
 if settings.DEBUG:
