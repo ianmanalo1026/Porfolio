@@ -11,10 +11,11 @@
     <title>Hello, world!</title>
   </head>
   <body>
-    <div class="container justify-content-center">
+    <div class="container col-lg-6 justify-content-center mt-5">
         <form method="POST" enctype="multipart/form-data">
+          {{ csrf_token }}
             {{ form.media }}
-            {{ form.as_p }}
+            {{ form }}
             <input type="submit"/>
         </form>
     </div>
